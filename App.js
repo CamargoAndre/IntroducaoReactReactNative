@@ -16,15 +16,16 @@ export default class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      contador: "Sorteio"
+      contador: "----------"
     }
   }
   render(){
     return(
     <View style={styles.container}>
-      <Text>{this.state.contador}</Text>
+      <p><Text><h2>{"GERADOR DE JOGOS MEGA SENA"}</h2></Text></p>
+      <Text>{this.state.contador}</Text><br/>
       <Button 
-        title="Altera texto"
+        title="Sortear"
         onPress={() => {this.setState({contador: resultado()})}} />
     </View>
     );
